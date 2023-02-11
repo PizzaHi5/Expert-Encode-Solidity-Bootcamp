@@ -40,5 +40,7 @@ contract Homework2 {
     }
 
     //try to add 2 different sized arrays together
-
+    function EfficientArrayChange(uint256[] calldata array, uint256 deleteIndex) internal pure returns (uint256[] memory) {
+        
+    }
 }

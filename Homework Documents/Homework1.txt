@@ -1,7 +1,28 @@
 Homework 1
 . Why is client diversity important for Ethereum ?
+-   Client diversity ensures that the network is resilient to attacks and bugs. Non-diverse clients opens up viability for client-based
+    hacks. As an example of this importance, the 2016 Shanghai attack exploited a vulnerability on the main Geth client but was not 
+    present for the other clients. This ensured that ethereum network withstood the attack. Client diversity is very important in PoS.
+    A 1/3 client hack could prevent the beacon chain from finalizing a transaction. A 2/3 client hack could cause the chain to
+    incorrectly split and finalize requiring the other clients to rejoin the correct chain penalized by slashing.
+
 . What information is held for an Ethereum account ?
+-   Nonce - scalar value = # transactions sent and contracts created, 
+    Balance - scalar value = # wei, 
+    storageRoot - 256bit hash of merkle patricia root (a mapping between 256bit integer values) = keccek256(RLP256 integer)), 
+    codeHash - hash of EVM code of this account - immutable - this is the code that gets executed when .call is made to this address
+
 . Where is the full Ethereum state held ?
-    Mempool?
+-   The World State is a mapping(address => account states). It is not stored on the blockchain. The implementation of the modified
+    merkle patricia tree will maintain it. 
+
 . What is a replay attack ? which 2 pieces of information can prevent it ?
+-   Replay attack is when a transaction is maliciously/fraudulently repeated on the same or different blockchain.
+    Prevention: Pass a nonce into the transfer() function, creates unique message hash each time since nonce changes per transaction
+                Pass in address(this) and calculate the message hash with keccek256(abi.encodePacked()), this make a unique contract hash
+
 . In a contract how do we know who called a view function ?
+-   We can check the transaction signer? 
+
+Note: Sender of a transactions cannot be from a contract
+Note: View keyword is a hint to the client that they should perform a call rather than a transaction. 

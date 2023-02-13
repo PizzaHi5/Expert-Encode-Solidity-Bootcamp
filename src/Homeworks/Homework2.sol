@@ -10,11 +10,9 @@ contract Homework2 {
         uint j = 0;
         for(uint i = 0; i < array.length - j; i++) {
             if(i == deleteIndex) {
-                newArray[i] = array[i + 1];
                 j++;
-            } else {
-                newArray[i] = array[i + j];
             }
+            newArray[i] = array[i + j];
         }
     }
 
@@ -39,8 +37,23 @@ contract Homework2 {
         return false;
     }
 
-    //try to add 2 different sized arrays together
-    function EfficientArrayChange(uint256[] calldata array, uint256 deleteIndex) internal pure returns (uint256[] memory) {
-        
+    /**
+        @dev Using teammates shared attempt, I thought of a more efficient way to do this. Reads/writes to each variables
+            in the same array instead of contructing a new one and only checks that index onward.
+            note: lower index values = more expensive 
+     */
+    function EfficientArrayChange(uint256[] memory array, uint256 deleteIndex) internal pure returns (uint256[] memory) {
+        for(deleteIndex; deleteIndex < array.length; deleteIndex++) {
+            array[deleteIndex] = array[deleteIndex++]; 
+        }
+        return array;
     }
+
+    // Teammate used this one: I tried it with sample and do not believe it works
+    // [0,1,2,3] => remove slot 1 so sets [1] = [2] and then deletes [3]? Ends up with [0,2,2]
+    function removeNoOrder(uint256[] memory array, uint256 index) public pure {
+      array[index] = array[index + 1];
+      //array.pop();
+    }
+
 }

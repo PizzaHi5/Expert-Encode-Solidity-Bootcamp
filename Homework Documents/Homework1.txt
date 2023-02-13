@@ -14,7 +14,8 @@ Homework 1
 
 . Where is the full Ethereum state held ?
 -   The World State is a mapping(address => account states). It is not stored on the blockchain. The implementation of the modified
-    merkle patricia tree will maintain it. 
+    merkle patricia tree will maintain it. A full picture of the EVM state can be found looking at a combination of the World State, 
+    Transaction State, and Transaction Receipts/Logs.
 
 . What is a replay attack ? which 2 pieces of information can prevent it ?
 -   Replay attack is when a transaction is maliciously/fraudulently repeated on the same or different blockchain.
@@ -22,7 +23,9 @@ Homework 1
                 Pass in address(this) and calculate the message hash with keccek256(abi.encodePacked()), this make a unique contract hash
 
 . In a contract how do we know who called a view function ?
--   We can check the transaction signer? 
+-   We can check the transaction signer? Cant?
+    msg.sender 
+    Team and I having difficulty figuring this out. 
 
 Note: Sender of a transactions cannot be from a contract
 Note: View keyword is a hint to the client that they should perform a call rather than a transaction. 

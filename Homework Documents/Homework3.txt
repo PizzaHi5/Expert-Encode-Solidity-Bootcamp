@@ -1,0 +1,20 @@
+Homework 3
+. What are the advantages and disadvantages of the 256 bit word length in the EVM
+-   256bit word is used for keccek256 bit hashes. 
+    Advantages:
+    - Used in cryptography (keccek256 / ECDSA) 
+    - Increased security
+
+    Disadvantages:
+    - Lots of unused bits of memory
+    - Adds complexity to contract design to optimize memory usage
+
+2. What would happen if the implementation of a precompiled contract varied between
+Ethereum clients ?
+-   Like in the Shanghai hack 2016, if enough clients disagree with the compiled contract,
+    the functionality of a particular contract could pass one time and fail another depending
+    on the compiling contracts. It would lead to inconsistencies and security issues. 
+
+. Using Remix write a simple contract that uses a memory variable, then using the
+debugger step through the function and inspect the memory.
+-   

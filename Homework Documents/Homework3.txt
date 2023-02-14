@@ -17,4 +17,10 @@ Ethereum clients ?
 
 . Using Remix write a simple contract that uses a memory variable, then using the
 debugger step through the function and inspect the memory.
--   
+-   I deployed the 2_owner contract in default remix and started stepping thru the code. I 
+    noticed that I needed to create an etherscan account to step thru the debugger since it
+    seems to pull the abi from etherscan (even though I generate it?). Good to know console.log
+    works and actually displays information in remix. Tons of JUMP, POP, PUSH, MLOAD, DUP
+    Note: Thanks to logging in and supplying my newly created API key from etherscan, I was able
+    to auto verify my contract! Got the green check mark immediately w/o having to go thru all
+    the hassle like I did previously. GAINS!

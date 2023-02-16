@@ -1,0 +1,541 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "function (function (function (function () pure external) pure external) pure external) pure external",
+          "name": "",
+          "type": "function"
+        }
+      ],
+      "name": "isValid",
+      "outputs": [],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060b88061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063fc46244414602d575b600080fd5b603c6038366004603e565b5050565b005b60008060208385031215605057600080fd5b823567ffffffffffffffff1981168114606857600080fd5b8060601c925063ffffffff8160401c16915050925092905056fea2646970667358221220962e72879e6128e885a5a2824ef2e2fc13cc8625f8ee9656df48d6199f67fc8364736f6c63430008110033",
+    "sourceMap": "67:946:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063fc46244414602d575b600080fd5b603c6038366004603e565b5050565b005b60008060208385031215605057600080fd5b823567ffffffffffffffff1981168114606857600080fd5b8060601c925063ffffffff8160401c16915050925092905056fea2646970667358221220962e72879e6128e885a5a2824ef2e2fc13cc8625f8ee9656df48d6199f67fc8364736f6c63430008110033",
+    "sourceMap": "67:946:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;150:241;;;;;;:::i;:::-;;;;;;14:494:1;220:6;228;281:2;269:9;260:7;256:23;252:32;249:52;;;297:1;294;287:12;249:52;321:23;;-1:-1:-1;;371:33:1;;363:42;;353:70;;419:1;416;409:12;353:70;450:3;446:2;442:12;432:22;;491:10;485:3;481:2;477:12;473:29;463:39;;;14:494;;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "isValid(function)": "fc462444"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"function (function (function (function () pure external) pure external) pure external) pure external\",\"name\":\"\",\"type\":\"function\"}],\"name\":\"isValid\",\"outputs\":[],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Homeworks/Homework4.sol\":\"Homework4\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@aave/=lib/aave-v3-core/\",\":@chainlink/=lib/chainlink/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@solmate/=lib/solmate/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Homeworks/Homework4.sol\":{\"keccak256\":\"0x2c98d44f5db6253f147aacd30beae1e02f1cbe9faf99b2be5429e9276a6fb07d\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://bca57c00fe6d345e63581497528129ece41961ee794cc8b18bd676642f8a38ca\",\"dweb:/ipfs/QmXBUVXMyb8wMVzQ1LWZ2NohdrodypVfKGCh8bYnbeCs1W\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "function (function (function (function () pure external) pure external) pure external) pure external",
+              "name": "",
+              "type": "function"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "isValid"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@aave/=lib/aave-v3-core/",
+        ":@chainlink/=lib/chainlink/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@solmate/=lib/solmate/",
+        ":@uniswap/=lib/v3-core/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Homeworks/Homework4.sol": "Homework4"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Homeworks/Homework4.sol": {
+        "keccak256": "0x2c98d44f5db6253f147aacd30beae1e02f1cbe9faf99b2be5429e9276a6fb07d",
+        "urls": [
+          "bzz-raw://bca57c00fe6d345e63581497528129ece41961ee794cc8b18bd676642f8a38ca",
+          "dweb:/ipfs/QmXBUVXMyb8wMVzQ1LWZ2NohdrodypVfKGCh8bYnbeCs1W"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Homeworks/Homework4.sol",
+    "id": 43,
+    "exportedSymbols": {
+      "Homework4": [
+        42
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "40:973:0",
+    "nodes": [
+      {
+        "id": 1,
+        "nodeType": "PragmaDirective",
+        "src": "40:24:0",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 42,
+        "nodeType": "ContractDefinition",
+        "src": "67:946:0",
+        "nodes": [
+          {
+            "id": 21,
+            "nodeType": "FunctionDefinition",
+            "src": "150:241:0",
+            "nodes": [],
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "383:8:0",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "fc462444",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isValid",
+            "nameLocation": "159:7:0",
+            "parameters": {
+              "id": 18,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 17,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21,
+                  "src": "176:192:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_external_pure$_t_function_external_pure$_t_function_external_pure$_t_function_external_pure$__$returns$__$_$returns$__$_$returns$__$_$returns$__$",
+                    "typeString": "function (function (function (function () pure external) pure external) pure external) pure external"
+                  },
+                  "typeName": {
+                    "id": 16,
+                    "nodeType": "FunctionTypeName",
+                    "parameterTypes": {
+                      "id": 14,
+                      "nodeType": "ParameterList",
+                      "parameters": [
+                        {
+                          "constant": false,
+                          "id": 13,
+                          "mutability": "mutable",
+                          "name": "",
+                          "nameLocation": "-1:-1:-1",
+                          "nodeType": "VariableDeclaration",
+                          "scope": 16,
+                          "src": "198:150:0",
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_pure$_t_function_external_pure$_t_function_external_pure$__$returns$__$_$returns$__$_$returns$__$",
+                            "typeString": "function (function (function () pure external) pure external) pure external"
+                          },
+                          "typeName": {
+                            "id": 12,
+                            "nodeType": "FunctionTypeName",
+                            "parameterTypes": {
+                              "id": 10,
+                              "nodeType": "ParameterList",
+                              "parameters": [
+                                {
+                                  "constant": false,
+                                  "id": 9,
+                                  "mutability": "mutable",
+                                  "name": "",
+                                  "nameLocation": "-1:-1:-1",
+                                  "nodeType": "VariableDeclaration",
+                                  "scope": 12,
+                                  "src": "224:100:0",
+                                  "stateVariable": false,
+                                  "storageLocation": "default",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_external_pure$_t_function_external_pure$__$returns$__$_$returns$__$",
+                                    "typeString": "function (function () pure external) pure external"
+                                  },
+                                  "typeName": {
+                                    "id": 8,
+                                    "nodeType": "FunctionTypeName",
+                                    "parameterTypes": {
+                                      "id": 6,
+                                      "nodeType": "ParameterList",
+                                      "parameters": [
+                                        {
+                                          "constant": false,
+                                          "id": 5,
+                                          "mutability": "mutable",
+                                          "name": "",
+                                          "nameLocation": "-1:-1:-1",
+                                          "nodeType": "VariableDeclaration",
+                                          "scope": 8,
+                                          "src": "254:42:0",
+                                          "stateVariable": false,
+                                          "storageLocation": "default",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_external_pure$__$returns$__$",
+                                            "typeString": "function () pure external"
+                                          },
+                                          "typeName": {
+                                            "id": 4,
+                                            "nodeType": "FunctionTypeName",
+                                            "parameterTypes": {
+                                              "id": 2,
+                                              "nodeType": "ParameterList",
+                                              "parameters": [],
+                                              "src": "262:2:0"
+                                            },
+                                            "returnParameterTypes": {
+                                              "id": 3,
+                                              "nodeType": "ParameterList",
+                                              "parameters": [],
+                                              "src": "295:0:0"
+                                            },
+                                            "src": "254:42:0",
+                                            "stateMutability": "pure",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_function_external_pure$__$returns$__$",
+                                              "typeString": "function () pure external"
+                                            },
+                                            "visibility": "external"
+                                          },
+                                          "visibility": "internal"
+                                        }
+                                      ],
+                                      "src": "232:64:0"
+                                    },
+                                    "returnParameterTypes": {
+                                      "id": 7,
+                                      "nodeType": "ParameterList",
+                                      "parameters": [],
+                                      "src": "323:0:0"
+                                    },
+                                    "src": "224:100:0",
+                                    "stateMutability": "pure",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_external_pure$_t_function_external_pure$__$returns$__$_$returns$__$",
+                                      "typeString": "function (function () pure external) pure external"
+                                    },
+                                    "visibility": "external"
+                                  },
+                                  "visibility": "internal"
+                                }
+                              ],
+                              "src": "206:118:0"
+                            },
+                            "returnParameterTypes": {
+                              "id": 11,
+                              "nodeType": "ParameterList",
+                              "parameters": [],
+                              "src": "347:0:0"
+                            },
+                            "src": "198:150:0",
+                            "stateMutability": "pure",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_pure$_t_function_external_pure$_t_function_external_pure$__$returns$__$_$returns$__$_$returns$__$",
+                              "typeString": "function (function (function () pure external) pure external) pure external"
+                            },
+                            "visibility": "external"
+                          },
+                          "visibility": "internal"
+                        }
+                      ],
+                      "src": "184:164:0"
+                    },
+                    "returnParameterTypes": {
+                      "id": 15,
+                      "nodeType": "ParameterList",
+                      "parameters": [],
+                      "src": "367:0:0"
+                    },
+                    "src": "176:192:0",
+                    "stateMutability": "pure",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_external_pure$_t_function_external_pure$_t_function_external_pure$_t_function_external_pure$__$returns$__$_$returns$__$_$returns$__$_$returns$__$",
+                      "typeString": "function (function (function (function () pure external) pure external) pure external) pure external"
+                    },
+                    "visibility": "external"
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "166:202:0"
+            },
+            "returnParameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "383:0:0"
+            },
+            "scope": 42,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 41,
+            "nodeType": "FunctionDefinition",
+            "src": "747:264:0",
+            "nodes": [],
+            "body": {
+              "id": 40,
+              "nodeType": "Block",
+              "src": "987:24:0",
+              "nodes": [],
+              "statements": []
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "isValid",
+            "nameLocation": "756:7:0",
+            "parameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 41,
+                  "src": "777:200:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_function_internal_nonpayable$_t_function_internal_nonpayable$_t_function_internal_nonpayable$_t_function_external_nonpayable$__$returns$__$_$returns$__$_$returns$__$_$returns$__$",
+                    "typeString": "function (function (function (function () external)))"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "nodeType": "FunctionTypeName",
+                    "parameterTypes": {
+                      "id": 34,
+                      "nodeType": "ParameterList",
+                      "parameters": [
+                        {
+                          "constant": false,
+                          "id": 33,
+                          "mutability": "mutable",
+                          "name": "",
+                          "nameLocation": "-1:-1:-1",
+                          "nodeType": "VariableDeclaration",
+                          "scope": 36,
+                          "src": "803:155:0",
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_nonpayable$_t_function_internal_nonpayable$_t_function_external_nonpayable$__$returns$__$_$returns$__$_$returns$__$",
+                            "typeString": "function (function (function () external))"
+                          },
+                          "typeName": {
+                            "id": 32,
+                            "nodeType": "FunctionTypeName",
+                            "parameterTypes": {
+                              "id": 30,
+                              "nodeType": "ParameterList",
+                              "parameters": [
+                                {
+                                  "constant": false,
+                                  "id": 29,
+                                  "mutability": "mutable",
+                                  "name": "",
+                                  "nameLocation": "-1:-1:-1",
+                                  "nodeType": "VariableDeclaration",
+                                  "scope": 32,
+                                  "src": "833:102:0",
+                                  "stateVariable": false,
+                                  "storageLocation": "default",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_internal_nonpayable$_t_function_external_nonpayable$__$returns$__$_$returns$__$",
+                                    "typeString": "function (function () external)"
+                                  },
+                                  "typeName": {
+                                    "id": 28,
+                                    "nodeType": "FunctionTypeName",
+                                    "parameterTypes": {
+                                      "id": 26,
+                                      "nodeType": "ParameterList",
+                                      "parameters": [
+                                        {
+                                          "constant": false,
+                                          "id": 25,
+                                          "mutability": "mutable",
+                                          "name": "",
+                                          "nameLocation": "-1:-1:-1",
+                                          "nodeType": "VariableDeclaration",
+                                          "scope": 28,
+                                          "src": "867:41:0",
+                                          "stateVariable": false,
+                                          "storageLocation": "default",
+                                          "typeDescriptions": {
+                                            "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                            "typeString": "function () external"
+                                          },
+                                          "typeName": {
+                                            "id": 24,
+                                            "nodeType": "FunctionTypeName",
+                                            "parameterTypes": {
+                                              "id": 22,
+                                              "nodeType": "ParameterList",
+                                              "parameters": [],
+                                              "src": "875:2:0"
+                                            },
+                                            "returnParameterTypes": {
+                                              "id": 23,
+                                              "nodeType": "ParameterList",
+                                              "parameters": [],
+                                              "src": "907:0:0"
+                                            },
+                                            "src": "867:41:0",
+                                            "stateMutability": "nonpayable",
+                                            "typeDescriptions": {
+                                              "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                              "typeString": "function () external"
+                                            },
+                                            "visibility": "external"
+                                          },
+                                          "visibility": "internal"
+                                        }
+                                      ],
+                                      "src": "841:67:0"
+                                    },
+                                    "returnParameterTypes": {
+                                      "id": 27,
+                                      "nodeType": "ParameterList",
+                                      "parameters": [],
+                                      "src": "934:0:0"
+                                    },
+                                    "src": "833:102:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_function_internal_nonpayable$_t_function_external_nonpayable$__$returns$__$_$returns$__$",
+                                      "typeString": "function (function () external)"
+                                    },
+                                    "visibility": "internal"
+                                  },
+                                  "visibility": "internal"
+                                }
+                              ],
+                              "src": "811:124:0"
+                            },
+                            "returnParameterTypes": {
+                              "id": 31,
+                              "nodeType": "ParameterList",
+                              "parameters": [],
+                              "src": "957:0:0"
+                            },
+                            "src": "803:155:0",
+                            "stateMutability": "nonpayable",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_nonpayable$_t_function_internal_nonpayable$_t_function_external_nonpayable$__$returns$__$_$returns$__$_$returns$__$",
+                              "typeString": "function (function (function () external))"
+                            },
+                            "visibility": "internal"
+                          },
+                          "visibility": "internal"
+                        }
+                      ],
+                      "src": "785:173:0"
+                    },
+                    "returnParameterTypes": {
+                      "id": 35,
+                      "nodeType": "ParameterList",
+                      "parameters": [],
+                      "src": "976:0:0"
+                    },
+                    "src": "777:200:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_function_internal_nonpayable$_t_function_internal_nonpayable$_t_function_internal_nonpayable$_t_function_external_nonpayable$__$returns$__$_$returns$__$_$returns$__$_$returns$__$",
+                      "typeString": "function (function (function (function () external)))"
+                    },
+                    "visibility": "internal"
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "763:214:0"
+            },
+            "returnParameters": {
+              "id": 39,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "987:0:0"
+            },
+            "scope": 42,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Homework4",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          42
+        ],
+        "name": "Homework4",
+        "nameLocation": "76:9:0",
+        "scope": 43,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 0
+}

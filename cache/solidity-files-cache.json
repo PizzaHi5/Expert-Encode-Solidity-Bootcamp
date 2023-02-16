@@ -805,8 +805,8 @@
       }
     },
     "src/Homeworks/Homework2.sol": {
-      "lastModificationDate": 1676310615611,
-      "contentHash": "f8f6473018ae9558634011365d788432",
+      "lastModificationDate": 1676311753283,
+      "contentHash": "62c02210ec4d7b38b876662f0c4dd5c0",
       "sourceName": "src/Homeworks/Homework2.sol",
       "solcConfig": {
         "settings": {
@@ -841,6 +841,46 @@
       "artifacts": {
         "Homework2": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "Homework2.sol/Homework2.json"
+        }
+      }
+    },
+    "src/Homeworks/Homework4.sol": {
+      "lastModificationDate": 1676502300168,
+      "contentHash": "5431cef7aa3cb8710f7d401a24e4f70e",
+      "sourceName": "src/Homeworks/Homework4.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.17",
+      "artifacts": {
+        "Homework4": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework4.sol/Homework4.json"
         }
       }
     },

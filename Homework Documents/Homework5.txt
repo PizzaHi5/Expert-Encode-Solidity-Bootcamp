@@ -1,0 +1,34 @@
+Homework 5
+Assembly 1
+1. Look at the example of init code in today's notes
+See gist (https://gist.github.com/extropyCoder/4243c0f90e6a6e97006a31f5b9265b94)
+When we do the CODECOPY operation, what are we overwriting ?
+-   We are overwriting 182bytes from calldata into memory after the offset set to byte 27
+    in this contract. 
+    
+(debugging this in Remix might help here)
+-   debugged this with team, figured out and answered our questions
+
+. Could the answer to Q1 allow an optimisation ?
+-   Theres an ISZERO opcode in regular deployment. If we know what we are doing, this can
+    be further optimized. The REVERT command checks if ether was sent. This can be removed
+    as well if we know we will not be. 
+
+. Can you trigger a revert in the init code in Remix ?
+-   Yes, if you send wei to this contract at deployment and its not payable, this will trigger
+    the REVERT command.
+
+. Write some Yul to
+    1. Add 0x07 to 0x08
+    . store the result at the next free memory location.
+    . (optional) write this again in opcodes
+
+. Can you think of a situation where the opcode EXTCODECOPY is used ?
+-   Useful to create another contract based on an already existing contract. Can also check specific
+    bytes to ensure contracts meet requirements. Also useful in proxy contracts to verify deployed
+    contract matches its source code. 
+
+. Complete the assembly exercises in this repo
+Exercises
+If you want to use gitpod, this is the format
+https://gitpod.io/#https://github.com/ExtropyIO/ExpertSolidityBootcamp

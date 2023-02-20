@@ -27,5 +27,5 @@ block number.
 
 Is this valid solidity ? (picture is in the pdf version)
 -   Yes, this is valid. I am surprised that its valid but its valid. I even tested
-    some other cases and they are also valid. You can put functions as parameters
-    into other functions. 
+    some other cases and they are also valid in homework4.sol. You can put functions
+    as parameters into other functions. 

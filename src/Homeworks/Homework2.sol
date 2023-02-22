@@ -38,7 +38,7 @@ contract Homework2 {
     }
 
     /**
-        @dev Using teammates shared attempt, I thought of a more efficient way to do this. Reads/writes to each variables
+        @dev Using teammates shared attempt. Reads/writes to each variables
             in the same array instead of contructing a new one and only checks that index onward.
             note: lower index values = more expensive 
      */

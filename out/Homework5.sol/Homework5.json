@@ -1,0 +1,344 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "firstYulFxn",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060888061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80633115446014602d575b600080fd5b60336045565b60405190815260200160405180910390f35b6000600f60405260206040f3fea26469706673582212203b64acd4d58fd67c729ed8b9cd4d5d852a0ca408d2cd2069bc296e059fda2e4a64736f6c63430008110033",
+    "sourceMap": "67:389:2:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80633115446014602d575b600080fd5b60336045565b60405190815260200160405180910390f35b6000600f60405260206040f3fea26469706673582212203b64acd4d58fd67c729ed8b9cd4d5d852a0ca408d2cd2069bc296e059fda2e4a64736f6c63430008110033",
+    "sourceMap": "67:389:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;113:190;;;:::i;:::-;;;160:25:5;;;148:2;133:18;113:190:2;;;;;;;;157:7;211:15;246:4;239:19;284:2;246:4;271:16",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "firstYulFxn()": "31154460"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"firstYulFxn\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Homeworks/Homework5.sol\":\"Homework5\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@aave/=lib/aave-v3-core/\",\":@chainlink/=lib/chainlink/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@solmate/=lib/solmate/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/Homeworks/Homework5.sol\":{\"keccak256\":\"0x8a40ea5c14d084fd34b06d975dc1c6ed67b5ec003abd4bd570f357a09014d869\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://e5f450acb8269d80caf56da45eb05e3dfc593729aae45005fc3c0fb9a620dd57\",\"dweb:/ipfs/QmfG4QC8wwaqaRxP7Xg95mFfF88ZjpsrSHZ3EpnvAMfeRk\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "firstYulFxn",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@aave/=lib/aave-v3-core/",
+        ":@chainlink/=lib/chainlink/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@solmate/=lib/solmate/",
+        ":@uniswap/=lib/v3-core/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Homeworks/Homework5.sol": "Homework5"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Homeworks/Homework5.sol": {
+        "keccak256": "0x8a40ea5c14d084fd34b06d975dc1c6ed67b5ec003abd4bd570f357a09014d869",
+        "urls": [
+          "bzz-raw://e5f450acb8269d80caf56da45eb05e3dfc593729aae45005fc3c0fb9a620dd57",
+          "dweb:/ipfs/QmfG4QC8wwaqaRxP7Xg95mFfF88ZjpsrSHZ3EpnvAMfeRk"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Homeworks/Homework5.sol",
+    "id": 249,
+    "exportedSymbols": {
+      "Homework5": [
+        248
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "40:416:2",
+    "nodes": [
+      {
+        "id": 238,
+        "nodeType": "PragmaDirective",
+        "src": "40:24:2",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 248,
+        "nodeType": "ContractDefinition",
+        "src": "67:389:2",
+        "nodes": [
+          {
+            "id": 240,
+            "nodeType": "VariableDeclaration",
+            "src": "92:14:2",
+            "nodes": [],
+            "constant": false,
+            "mutability": "mutable",
+            "name": "amount",
+            "nameLocation": "100:6:2",
+            "scope": 248,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 239,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "92:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 247,
+            "nodeType": "FunctionDefinition",
+            "src": "113:190:2",
+            "nodes": [],
+            "body": {
+              "id": 246,
+              "nodeType": "Block",
+              "src": "166:137:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "AST": {
+                    "nodeType": "YulBlock",
+                    "src": "184:113:2",
+                    "statements": [
+                      {
+                        "nodeType": "YulVariableDeclaration",
+                        "src": "198:28:2",
+                        "value": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "215:4:2",
+                              "type": "",
+                              "value": "0x07"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "221:4:2",
+                              "type": "",
+                              "value": "0x08"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "add",
+                            "nodeType": "YulIdentifier",
+                            "src": "211:3:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "211:15:2"
+                        },
+                        "variables": [
+                          {
+                            "name": "value",
+                            "nodeType": "YulTypedName",
+                            "src": "202:5:2",
+                            "type": ""
+                          }
+                        ]
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "246:4:2",
+                              "type": "",
+                              "value": "0x40"
+                            },
+                            {
+                              "name": "value",
+                              "nodeType": "YulIdentifier",
+                              "src": "252:5:2"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "mstore",
+                            "nodeType": "YulIdentifier",
+                            "src": "239:6:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "239:19:2"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "239:19:2"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "278:4:2",
+                              "type": "",
+                              "value": "0x40"
+                            },
+                            {
+                              "kind": "number",
+                              "nodeType": "YulLiteral",
+                              "src": "284:2:2",
+                              "type": "",
+                              "value": "32"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "return",
+                            "nodeType": "YulIdentifier",
+                            "src": "271:6:2"
+                          },
+                          "nodeType": "YulFunctionCall",
+                          "src": "271:16:2"
+                        },
+                        "nodeType": "YulExpressionStatement",
+                        "src": "271:16:2"
+                      }
+                    ]
+                  },
+                  "evmVersion": "london",
+                  "externalReferences": [],
+                  "id": 245,
+                  "nodeType": "InlineAssembly",
+                  "src": "176:121:2"
+                }
+              ]
+            },
+            "functionSelector": "31154460",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "firstYulFxn",
+            "nameLocation": "122:11:2",
+            "parameters": {
+              "id": 241,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "133:2:2"
+            },
+            "returnParameters": {
+              "id": 244,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 243,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 247,
+                  "src": "157:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 242,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "157:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "156:9:2"
+            },
+            "scope": 248,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Homework5",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          248
+        ],
+        "name": "Homework5",
+        "nameLocation": "76:9:2",
+        "scope": 249,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 2
+}

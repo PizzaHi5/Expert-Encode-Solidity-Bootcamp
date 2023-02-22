@@ -1,0 +1,249 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "secondYulFxn",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b50609e8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063143a044314602d575b600080fd5b603e60383660046050565b50600090565b60405190815260200160405180910390f35b600060208284031215606157600080fd5b503591905056fea26469706673582212200e702cbc99b0702f5830d359db482b9399947a486249a33930fe02d71fec9bbf64736f6c63430008110033",
+    "sourceMap": "66:108:3:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063143a044314602d575b600080fd5b603e60383660046050565b50600090565b60405190815260200160405180910390f35b600060208284031215606157600080fd5b503591905056fea26469706673582212200e702cbc99b0702f5830d359db482b9399947a486249a33930fe02d71fec9bbf64736f6c63430008110033",
+    "sourceMap": "66:108:3:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;91:81;;;;;;:::i;:::-;-1:-1:-1;147:7:3;;91:81;;;;345:25:5;;;333:2;318:18;91:81:3;;;;;;;14:180:5;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:5;;14:180;-1:-1:-1;14:180:5:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "secondYulFxn(uint256)": "143a0443"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"secondYulFxn\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Homeworks/Homework6.sol\":\"Homework6\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@aave/=lib/aave-v3-core/\",\":@chainlink/=lib/chainlink/\",\":@openzeppelin/=lib/openzeppelin-contracts/\",\":@solmate/=lib/solmate/\",\":@uniswap/=lib/v3-core/\",\":base64-sol/=lib/base64/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\"]},\"sources\":{\"src/Homeworks/Homework6.sol\":{\"keccak256\":\"0x067daedaae92682b1702fc5d21686c6448c871a31f17590c4a0625cb7109cf37\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://c6c4477bb97cb9e3cad9774c2d31448d3abae6763c61a44065d54f0314a71c07\",\"dweb:/ipfs/QmQeZZy2xxjp4dsB6uwJo8fctC2HRL2KDk5N8MkwPRReSb\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.17+commit.8df45f5f"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function",
+          "name": "secondYulFxn",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@aave/=lib/aave-v3-core/",
+        ":@chainlink/=lib/chainlink/",
+        ":@openzeppelin/=lib/openzeppelin-contracts/",
+        ":@solmate/=lib/solmate/",
+        ":@uniswap/=lib/v3-core/",
+        ":base64-sol/=lib/base64/",
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Homeworks/Homework6.sol": "Homework6"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Homeworks/Homework6.sol": {
+        "keccak256": "0x067daedaae92682b1702fc5d21686c6448c871a31f17590c4a0625cb7109cf37",
+        "urls": [
+          "bzz-raw://c6c4477bb97cb9e3cad9774c2d31448d3abae6763c61a44065d54f0314a71c07",
+          "dweb:/ipfs/QmQeZZy2xxjp4dsB6uwJo8fctC2HRL2KDk5N8MkwPRReSb"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Homeworks/Homework6.sol",
+    "id": 260,
+    "exportedSymbols": {
+      "Homework6": [
+        259
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "40:134:3",
+    "nodes": [
+      {
+        "id": 250,
+        "nodeType": "PragmaDirective",
+        "src": "40:24:3",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ]
+      },
+      {
+        "id": 259,
+        "nodeType": "ContractDefinition",
+        "src": "66:108:3",
+        "nodes": [
+          {
+            "id": 258,
+            "nodeType": "FunctionDefinition",
+            "src": "91:81:3",
+            "nodes": [],
+            "body": {
+              "id": 257,
+              "nodeType": "Block",
+              "src": "156:16:3",
+              "nodes": [],
+              "statements": []
+            },
+            "functionSelector": "143a0443",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "secondYulFxn",
+            "nameLocation": "100:12:3",
+            "parameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 252,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "118:6:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 258,
+                  "src": "113:11:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 251,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "113:4:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "112:13:3"
+            },
+            "returnParameters": {
+              "id": 256,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 255,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 258,
+                  "src": "147:7:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 254,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "147:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "146:9:3"
+            },
+            "scope": 259,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Homework6",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          259
+        ],
+        "name": "Homework6",
+        "nameLocation": "75:9:3",
+        "scope": 260,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 3
+}

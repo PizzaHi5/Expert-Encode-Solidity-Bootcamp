@@ -1,0 +1,21 @@
+Homework 8
+Foundry Testing
+1. Investigate this project
+https://github.com/ExtropyIO/ExpertSolidityBootcamp/tree/main/exercises/defiFoundry
+Imagine you have been given the DeFi1 contract by a colleague and asked to test
+it using Foundry.
+Your colleague explains that the contract allows
+When testing make sure you know
+Try to find all the bugs / security problems / optimisation opportunities in the
+contract.
+You do not need to fix the code.
+investors to be added by the administrator
+investors to claim tokens, but the amount that they can claim should reduce
+every 1000 blocks.
+how would you advance blocks
+how would you make sure every block will work
+how would you make sure the contract works with different starting values
+such as
+block reward,
+numbers of investors
+initial number of tokens

@@ -1,2 +1,5 @@
-# ignore this file
+# ignore clone of Homework5 repo
 Hw5ReferenceRepo/Homework5/ExpertSolidityBootcamp/
+
+# ignore so I do not have to keep re-inputting alchemy/etherscan/private key info
+foundry.toml/

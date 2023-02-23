@@ -12,8 +12,8 @@
   },
   "files": {
     "SolidityCTF/hw2.sol": {
-      "lastModificationDate": 1677097615705,
-      "contentHash": "4df4282ad5e64736db6575e1fe554139",
+      "lastModificationDate": 1677101259277,
+      "contentHash": "6b3254f435b318491f9bfcda294577bb",
       "sourceName": "SolidityCTF/hw2.sol",
       "solcConfig": {
         "settings": {
@@ -968,8 +968,8 @@
       }
     },
     "src/Homeworks/Homework6.sol": {
-      "lastModificationDate": 1676939045478,
-      "contentHash": "dea602f8c9e7c2fce2868c46db574b89",
+      "lastModificationDate": 1677113315080,
+      "contentHash": "4077251e5aa759711b49d939ffac236f",
       "sourceName": "src/Homeworks/Homework6.sol",
       "solcConfig": {
         "settings": {
@@ -1004,6 +1004,46 @@
       "artifacts": {
         "Homework6": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "Homework6.sol/Homework6.json"
+        }
+      }
+    },
+    "src/Homeworks/Homework7.sol": {
+      "lastModificationDate": 1677134972022,
+      "contentHash": "e2ccf39dffed2aea29846dbdbf09d3a9",
+      "sourceName": "src/Homeworks/Homework7.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Homework7": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework7.sol/Homework7.json"
         }
       }
     },
@@ -1047,9 +1087,66 @@
         }
       }
     },
+    "test/Homework6.t.sol": {
+      "lastModificationDate": 1677115903731,
+      "contentHash": "4c11e57f6935aa8e1763649d3adea309",
+      "sourceName": "test/Homework6.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "src/Homeworks/Homework6.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Homework6Test": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework6.t.sol/Homework6Test.json"
+        }
+      }
+    },
     "test/Hw2Test.t.sol": {
-      "lastModificationDate": 1677094416501,
-      "contentHash": "3c26ab5b22cbaabc0292b7d3db2257c1",
+      "lastModificationDate": 1677101312386,
+      "contentHash": "8424d8072f4196fe32ebc893d373f0f9",
       "sourceName": "test/Hw2Test.t.sol",
       "solcConfig": {
         "settings": {

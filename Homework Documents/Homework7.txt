@@ -8,6 +8,7 @@ Complete the following query function
     }
 The query function should revert if the function type test passed is a standard
 ERC20 transfer function.
+-	transfer(0xa9059cbb), I am checking if test := this selector.
 
 Question 2
 The following function checks a function call passed in the data parameter.

@@ -1,0 +1,11 @@
+Homework 11
+Optimisation 2
+1. Why are negative numbers more expensive to store than positive numbers ?
+2. Test the following statements in Remix, which is cheaper and why ?
+Assume that the denominator can never be zero.
+1.
+    result = numerator / demoninator;
+2.
+assembly {
+    result := div(numerator, demoninator)
+}

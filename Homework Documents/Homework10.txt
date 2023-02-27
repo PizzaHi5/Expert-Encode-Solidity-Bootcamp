@@ -1,0 +1,8 @@
+Homework 10
+Optimisation Team Game
+Follow the instructions for the gas optimisation team game in the repo
+https://github.com/ExtropyIO/ExpertSolidityBootcamp/tree/main/exercises/gas
+Your team should try to reduce the amount of gas used to deploy the contract, and
+when running transactions.
+You can change the code as much as you like, but you must not change the tests, and
+your contract must pass all tests.

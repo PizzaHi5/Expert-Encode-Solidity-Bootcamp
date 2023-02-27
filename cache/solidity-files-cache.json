@@ -807,46 +807,6 @@
         }
       }
     },
-    "src/Counter.sol": {
-      "lastModificationDate": 1675708557260,
-      "contentHash": "ae6c800a2b4c57768024d6e9423d39e8",
-      "sourceName": "src/Counter.sol",
-      "solcConfig": {
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "metadata": {
-            "bytecodeHash": "ipfs",
-            "appendCBOR": true
-          },
-          "outputSelection": {
-            "*": {
-              "": [
-                "ast"
-              ],
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ]
-            }
-          },
-          "evmVersion": "london",
-          "libraries": {}
-        }
-      },
-      "imports": [],
-      "versionRequirement": "^0.8.13",
-      "artifacts": {
-        "Counter": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Counter.sol/Counter.json"
-        }
-      }
-    },
     "src/Homeworks/Homework2.sol": {
       "lastModificationDate": 1677084729794,
       "contentHash": "608e0dce52a3a0717a25f7abac83b0a9",
@@ -1008,8 +968,8 @@
       }
     },
     "src/Homeworks/Homework7.sol": {
-      "lastModificationDate": 1677134972022,
-      "contentHash": "e2ccf39dffed2aea29846dbdbf09d3a9",
+      "lastModificationDate": 1677135166689,
+      "contentHash": "d735bb361041b14e96f7335f40863203",
       "sourceName": "src/Homeworks/Homework7.sol",
       "solcConfig": {
         "settings": {

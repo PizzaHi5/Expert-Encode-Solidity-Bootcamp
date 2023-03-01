@@ -1,0 +1,10 @@
+Homework 13
+Auditing and Formal Methods
+1. Audit for tokens
+Go through the token checklist for this contract
+https://gist.github.com/shayanb/cd495e23c7cf1a8b269f8ce7fd198538
+https://gist.github.com/extropyCoder/933b1815629baa873c4d7369e1fc9c76
+
+2. Scribble
+1. Try the exercise here
+https://github.com/ConsenSys/scribble-exercise-1

@@ -3,3 +3,5 @@ Hw5ReferenceRepo/Homework5/ExpertSolidityBootcamp/
 
 # ignore so I do not have to keep re-inputting alchemy/etherscan/private key info
 .env
+
+cache/

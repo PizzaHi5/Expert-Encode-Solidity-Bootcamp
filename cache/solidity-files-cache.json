@@ -968,8 +968,8 @@
       }
     },
     "src/Homeworks/Homework7.sol": {
-      "lastModificationDate": 1677135166689,
-      "contentHash": "d735bb361041b14e96f7335f40863203",
+      "lastModificationDate": 1678309487299,
+      "contentHash": "e154eb0a36f731cfcfcb89e8e72e7f7e",
       "sourceName": "src/Homeworks/Homework7.sol",
       "solcConfig": {
         "settings": {
@@ -1101,6 +1101,63 @@
       "artifacts": {
         "Homework6Test": {
           "0.8.17+commit.8df45f5f.Linux.gcc": "Homework6.t.sol/Homework6Test.json"
+        }
+      }
+    },
+    "test/Homework7.t.sol": {
+      "lastModificationDate": 1678309171742,
+      "contentHash": "c624867a0638d8420471aebe17a4364a",
+      "sourceName": "test/Homework7.t.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/forge-std/lib/ds-test/src/test.sol",
+        "lib/forge-std/src/Base.sol",
+        "lib/forge-std/src/StdAssertions.sol",
+        "lib/forge-std/src/StdChains.sol",
+        "lib/forge-std/src/StdCheats.sol",
+        "lib/forge-std/src/StdError.sol",
+        "lib/forge-std/src/StdJson.sol",
+        "lib/forge-std/src/StdMath.sol",
+        "lib/forge-std/src/StdStorage.sol",
+        "lib/forge-std/src/StdUtils.sol",
+        "lib/forge-std/src/Test.sol",
+        "lib/forge-std/src/Vm.sol",
+        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
+        "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "src/Homeworks/Homework7.sol"
+      ],
+      "versionRequirement": "^0.8.13",
+      "artifacts": {
+        "Homework7Test": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework7.t.sol/Homework7Test.json"
         }
       }
     },

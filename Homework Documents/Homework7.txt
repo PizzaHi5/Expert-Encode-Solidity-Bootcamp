@@ -24,4 +24,7 @@ Complete the function body.
 The function should revert if the function is not an ERC20 transfer function.
 Otherwise extract the address and amount from the data variable and emit an event
 with those details
-event transferOccurred(address,uint256);
+-   event transferOccurred(address,uint256);
+    Look at src and test contracts for how I did this homework. Ran into trouble
+    at multiple points, especially during testing. 
+

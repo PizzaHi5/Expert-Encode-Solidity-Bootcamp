@@ -1,0 +1,43 @@
+# README
+
+Imagine you have been given the DeFi1 contract by a colleague and asked to test it using Foundry.
+Your colleague explains that the contract allows
+- investors to claim tokens, but the amount that they can claim should go down each block.
+- investors to be added by the administrator
+-	These contract system does not allow for the
+	functionality desired by the client in this situation. A long list of edits need to be made, some listed below. 
+
+Make sure you know
+ - how would you advance blocks, 
+-	anvil_mine amount => this will mine a number of blocks
+ - how would you make sure every block will work 
+ - how would you make sure the contract works with different starting values such as 
+ 	- block reward, 
+	- numbers of investors
+	- initial number of tokens
+
+-	Good documentation to reference for Foundry testing is
+	the https://book.getfoundry.sh/forge/forge-std site. 
+    I referenced this site extensively. For the questions asked above, Vm.sol, cast calls, or anvil calls. 
+    Fuzz testing will ensure our contracts can handle block rewards, many investor counts, any size initial # of tokens. 
+    Combine these with invariant testing to ensure the whole system functions as intended. 
+
+Try to find all the bugs  / security problems / optimisation opportunities  in the contract. 
+You do not need to fix the code.
+-	There are a lot of bugs/security problems/optimisations
+	that I see. Heres some I see:
+	- initialAmount = unnecessary storage variable, refer to
+		totalSupply
+	- addInvestor = public with no restrictions, needs
+		onlyOwner
+	- payout in claimTokens is not changed. Need to set
+		calculatePayout() to payout.
+	- blockReward-- could be subtracting from memory or
+		storage. I cannot tell which w/o testing. Change name.
+	- Tons of security concerns in Token.sol. Use
+		Openzeppelin ERC20 contract.
+	- Can set initialAmount to immutable 
+	- blockReward calculated in calculatePayout(), doesnt 
+		need storage variable
+	- blockReward calculation leads to optimal payouts being
+		produced in blocks ending with 99x. Something looks off. 

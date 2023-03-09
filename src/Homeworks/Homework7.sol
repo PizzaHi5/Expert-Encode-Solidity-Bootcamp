@@ -11,21 +11,17 @@ contract Homework7 {
     function query(bytes memory data, function(address,uint256) external returns (bool) test)
     public { //pure
         //look at selector of passed in function, check theres no IERC20 
-        bytes4 sig = test.selector;
-
         assembly {
-            //let prepreselector := mload(preselector)
-            //mstore(0x100, prepreselector)
-            //let sig := mload(add(0x100, 0x04))
-            if eq(sig, 0xa9059cbb) { //or test.selector
-                let str := "Denied: ERC20 transfer selector"
+            let transferSig := mload(0xa9059cbb)
+            if eq(test.selector, transferSig) {
+                let str := "Supposed to Revert"
                 let len := mload(str) //mload converts to bytes
-                let bytesStr := mload(add(str, 0x20))
+                //let bytesStr := mload(add(str, 0x20))
                 
-                let ptr := mload(0x40)
+                //let ptr := mload(0x40)
                 mstore(0x40, len)
-                mstore(add(ptr, 0x40), bytesStr)
-                revert(ptr, add(len, 0x40))
+                //mstore(add(ptr, 0x40), bytesStr)
+                revert(0x40, len)
             }
         }
 

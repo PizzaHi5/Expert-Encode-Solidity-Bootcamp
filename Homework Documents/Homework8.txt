@@ -19,3 +19,6 @@ such as
 block reward,
 numbers of investors
 initial number of tokens
+
+-   For this homework, reference Homework5_8_ref.txt in homework folder
+    I audited this homework using Foundry which is what is intended for this homework.

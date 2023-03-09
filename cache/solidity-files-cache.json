@@ -754,6 +754,46 @@
         }
       }
     },
+    "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1677088518402,
+      "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
+      "sourceName": "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC20": {
+          "0.8.17+commit.8df45f5f.Linux.gcc": "IERC20.sol/IERC20.json"
+        }
+      }
+    },
     "script/Counter.s.sol": {
       "lastModificationDate": 1675708557267,
       "contentHash": "0705c52104730a78aef4aa6694175c81",
@@ -968,8 +1008,8 @@
       }
     },
     "src/Homeworks/Homework7.sol": {
-      "lastModificationDate": 1678309487299,
-      "contentHash": "e154eb0a36f731cfcfcb89e8e72e7f7e",
+      "lastModificationDate": 1678394118464,
+      "contentHash": "61fa6ba8ca14a340f8efe23a73874352",
       "sourceName": "src/Homeworks/Homework7.sol",
       "solcConfig": {
         "settings": {
@@ -1048,8 +1088,8 @@
       }
     },
     "test/Homework6.t.sol": {
-      "lastModificationDate": 1677115903731,
-      "contentHash": "4c11e57f6935aa8e1763649d3adea309",
+      "lastModificationDate": 1678314536489,
+      "contentHash": "19a37535b022629e432b23aa3fee0428",
       "sourceName": "test/Homework6.t.sol",
       "solcConfig": {
         "settings": {
@@ -1105,8 +1145,8 @@
       }
     },
     "test/Homework7.t.sol": {
-      "lastModificationDate": 1678309171742,
-      "contentHash": "c624867a0638d8420471aebe17a4364a",
+      "lastModificationDate": 1678396033962,
+      "contentHash": "025a34d43aa80d1997f2e8e44279a952",
       "sourceName": "test/Homework7.t.sol",
       "solcConfig": {
         "settings": {
@@ -1152,6 +1192,7 @@
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
         "lib/forge-std/src/interfaces/IMulticall3.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC20/IERC20.sol",
         "src/Homeworks/Homework7.sol"
       ],
       "versionRequirement": "^0.8.13",

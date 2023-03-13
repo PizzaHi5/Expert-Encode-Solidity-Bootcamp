@@ -90,7 +90,8 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "test.sol/DSTest.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "test.sol/DSTest.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "test.sol/DSTest.json"
         }
       }
     },
@@ -133,13 +134,16 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "CommonBase": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Base.sol/CommonBase.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Base.sol/CommonBase.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Base.sol/CommonBase.json"
         },
         "ScriptBase": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Base.sol/ScriptBase.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Base.sol/ScriptBase.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Base.sol/ScriptBase.json"
         },
         "TestBase": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Base.sol/TestBase.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Base.sol/TestBase.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Base.sol/TestBase.json"
         }
       }
     },
@@ -234,7 +238,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdAssertions": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdAssertions.sol/StdAssertions.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
         }
       }
     },
@@ -276,7 +281,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdChains": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdChains.sol/StdChains.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdChains.sol/StdChains.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdChains.sol/StdChains.json"
         }
       }
     },
@@ -319,10 +325,12 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdCheats": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdCheats.sol/StdCheats.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdCheats.sol/StdCheats.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdCheats.sol/StdCheats.json"
         },
         "StdCheatsSafe": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
         }
       }
     },
@@ -362,7 +370,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdError": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdError.sol/stdError.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdError.sol/stdError.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdError.sol/stdError.json"
         }
       }
     },
@@ -404,7 +413,8 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "stdJson": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdJson.sol/stdJson.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdJson.sol/stdJson.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdJson.sol/stdJson.json"
         }
       }
     },
@@ -444,7 +454,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdMath": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdMath.sol/stdMath.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdMath.sol/stdMath.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdMath.sol/stdMath.json"
         }
       }
     },
@@ -486,10 +497,12 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdStorage": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdStorage.sol/stdStorage.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdStorage.sol/stdStorage.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdStorage.sol/stdStorage.json"
         },
         "stdStorageSafe": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdStorage.sol/stdStorageSafe.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
         }
       }
     },
@@ -532,7 +545,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdUtils": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "StdUtils.sol/StdUtils.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "StdUtils.sol/StdUtils.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "StdUtils.sol/StdUtils.json"
         }
       }
     },
@@ -587,7 +601,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Test.sol/Test.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Test.sol/Test.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Test.sol/Test.json"
         }
       }
     },
@@ -627,10 +642,12 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Vm.sol/Vm.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Vm.sol/Vm.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Vm.sol/Vm.json"
         },
         "VmSafe": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Vm.sol/VmSafe.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "Vm.sol/VmSafe.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Vm.sol/VmSafe.json"
         }
       }
     },
@@ -670,7 +687,8 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "console.sol/console.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "console.sol/console.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "console.sol/console.json"
         }
       }
     },
@@ -710,7 +728,8 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "console2.sol/console2.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "console2.sol/console2.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "console2.sol/console2.json"
         }
       }
     },
@@ -750,7 +769,8 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "IMulticall3": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
+          "0.8.17+commit.8df45f5f.Linux.gcc": "IMulticall3.sol/IMulticall3.json",
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
         }
       }
     },
@@ -790,7 +810,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC20": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "IERC20.sol/IERC20.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "IERC20.sol/IERC20.json"
         }
       }
     },
@@ -847,6 +867,46 @@
         }
       }
     },
+    "src/Homeworks/Homework10.sol": {
+      "lastModificationDate": 1678737264173,
+      "contentHash": "00664a41fbffef125dd850fbff6ffb74",
+      "sourceName": "src/Homeworks/Homework10.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.18",
+      "artifacts": {
+        "GasContract": {
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework10.sol/GasContract.json"
+        }
+      }
+    },
     "src/Homeworks/Homework2.sol": {
       "lastModificationDate": 1677084729794,
       "contentHash": "608e0dce52a3a0717a25f7abac83b0a9",
@@ -883,7 +943,7 @@
       "versionRequirement": "^0.8.17",
       "artifacts": {
         "Homework2": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework2.sol/Homework2.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework2.sol/Homework2.json"
         }
       }
     },
@@ -923,7 +983,7 @@
       "versionRequirement": "^0.8.17",
       "artifacts": {
         "Homework4": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework4.sol/Homework4.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework4.sol/Homework4.json"
         }
       }
     },
@@ -963,7 +1023,7 @@
       "versionRequirement": "^0.8.17",
       "artifacts": {
         "Homework5": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework5.sol/Homework5.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework5.sol/Homework5.json"
         }
       }
     },
@@ -1003,7 +1063,7 @@
       "versionRequirement": "^0.8.17",
       "artifacts": {
         "Homework6": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework6.sol/Homework6.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework6.sol/Homework6.json"
         }
       }
     },
@@ -1043,7 +1103,7 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Homework7": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework7.sol/Homework7.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework7.sol/Homework7.json"
         }
       }
     },
@@ -1083,7 +1143,7 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Homework5.t": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework5.t.sol/Homework5.t.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework5.t.sol/Homework5.t.json"
         }
       }
     },
@@ -1140,13 +1200,13 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Homework6Test": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework6.t.sol/Homework6Test.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework6.t.sol/Homework6Test.json"
         }
       }
     },
     "test/Homework7.t.sol": {
-      "lastModificationDate": 1678397530924,
-      "contentHash": "2539e074eea1ba0ec5786e9e6a3e88b9",
+      "lastModificationDate": 1678397913185,
+      "contentHash": "d7e637ea679fe537bd32d66539970021",
       "sourceName": "test/Homework7.t.sol",
       "solcConfig": {
         "settings": {
@@ -1198,7 +1258,7 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "Homework7Test": {
-          "0.8.17+commit.8df45f5f.Linux.gcc": "Homework7.t.sol/Homework7Test.json"
+          "0.8.19+commit.7dd6d404.Linux.gcc": "Homework7.t.sol/Homework7Test.json"
         }
       }
     },

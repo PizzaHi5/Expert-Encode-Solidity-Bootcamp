@@ -6,3 +6,6 @@ Your team should try to reduce the amount of gas used to deploy the contract, an
 when running transactions.
 You can change the code as much as you like, but you must not change the tests, and
 your contract must pass all tests.
+
+-   Worked with team to get the run % down from 15.5% to 4.5%. Some groups were able
+    to get it as low at 0.87%.

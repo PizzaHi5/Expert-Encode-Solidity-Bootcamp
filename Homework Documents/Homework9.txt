@@ -6,9 +6,42 @@ https://extropy-io.medium.com/illuminating-the-dark-forest-748d915eeaa1
 https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/
 https://samczsun.com/escaping-the-dark-forest/
 3. Discuss in your teams how you can mitigate MEV, and should we do so ?.
+-   Using Flashbot is a way to mitigate MEV transaction ordering.
+
 . Look through the code for the MEV bot Sandwich contract
 https://github.com/libevm/subway/blob/master/contracts/src/Sandwich.sol
 Do you understand what the assembly code is doing ?
+-   Time to begin explaining in detail what I am seeing. I understand at the high level
+    its supposed to read the mempool for 2 transaction types, transfer and V2 uniswap swap.
+
+-   Line67 := Load 0x00 memory slot (32bytes) and right shift it 12 bytes to fit a bytes20 (address)
+-   Line69 := Load 32bytes at 0x14 (immediately after token address) and use next 20 bytes for another
+    address.
+-   The next 2 uint256 each take up 10 bytes, stored immediately after each other in memory taking 16
+    bytes each. Very compact.
+-   Line75 confused me. For a "uint8", they're using a single byte so they load 32 bytes after all the
+    previous data and right shift it 31 bytes leaving 1 byte for data. 
+-   Line80 := store transfer selector to memory presumably after other data (I have not kept exact track
+    of bytes used). Bytes4 store, next mstore occurs next to it.
+-   Line84 := another store at 160, Line82 mstored 20bytes which means 148 (0x94) should have been the target.
+    Unclear to me why they left those 12 bytes unused. Nevermind, 0xa0 is a memory slot. 
+-   Line86 := @ token address, call transfer function with:
+    remaining gas - 5000, token address, 0 wei, @ byte124 - load 68 bytes (2 memory slots + 4 bytes for
+    transfer selector - slots 4 and 5 + last 4 bytes of slot 3), 0 output location and output size.
+-   If call returns 0 (call failed), revert.
+-   Line103 := replace transfer selector with swap selector in memory byte slots 124-128.
+-   Line105 := depending on input tokenOutNo calldata, mstore uint128 16 bytes in slot 4 and 5 accordingly.
+-   Line115 := store address(this) @ slot 6 (byte 192)
+-   Line117 := idk why they stored 0x80 (128) in slot 7. Lot of empty bytes 
+-   Line119 := call swap on pair address inputting 164 bytes starting at 124 (5 memory slots + last 4 bytes
+    of slot 3). Lots of empty bytes inputted to the function. 128 (0x80) in slot 7 and empty slot 8.
+-   Line120 := final check if call passed, revert otherwise.
+
+-   Thats it! Wooooo! That was very complex to understand! Still more to learn here! I am glad I worked hard to
+    gain a deeper understanding of how this contract is executing. 
+
 . See if you can listen to the mempool using ether.js (or similar web3.py etc)
 . Can you f nd a way to f lter your mempool listener and get only uniswap
 transactions?
+-   This was done in the last class. I will do this again to review. This can 100% be done and I have done it
+    before. Got lots of errors since I had to restart the listener a few times. Heard 3 calls in the span of 10mins.

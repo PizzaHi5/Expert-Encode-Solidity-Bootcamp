@@ -1,6 +1,9 @@
 Homework 11
 Optimisation 2
 1. Why are negative numbers more expensive to store than positive numbers ?
+-   Negative numbers require more steps to store than positive. This is because
+    these numbers must be inverted and +1 before storing. 
+
 2. Test the following statements in Remix, which is cheaper and why ?
 Assume that the denominator can never be zero.
 1.
@@ -9,3 +12,6 @@ Assume that the denominator can never be zero.
 assembly {
     result := div(numerator, demoninator)
 }
+-   I tested this in Foundry. Look at the homework 11 file in src and test folders.
+    Doing the division in Yul does not come with the overflow checks that solidity
+    does in the background in ^0.8.0. I got a 48 gas savings with yul over Solidity.

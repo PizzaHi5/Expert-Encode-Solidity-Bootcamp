@@ -6,4 +6,4 @@ https://www.solidityctf.xyz/
 
 Delay in updates due to attending EthDenver 2023 Feb 23 - March 6th.
 
-Started catch up! 3/7/23
+Delay update due to ZK Encode Bootcamp 

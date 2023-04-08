@@ -12,6 +12,16 @@ and will pick 100 winners which will be added to the winners array, the UI will 
 call the payout function to pay each of the winners.
 The remaining balance will be kept as profit for the developers."
 Write out the main points that you would include in an audit report.
+-   I did not modify the code, copy/pasted into src/
+-   Notes
+    line16: Default values in Solidity are in wei. Change that to 1e18.
+    line20: StartPayout() gets emitted at 201st player, not 200th
+    line29: Anyone can call payout(), consider adding restriction.
+    line36: Anyone can call payWinners(), consider adding restriction.
+    line36: Anyone can specify the amount of ETH they get sent from the contract.
+    line30: Whoever calls payout is required to have 100 wei, odd restriction.
+    line25: Anyone can add themselves as a winner. 
+
 Underhanded Solidity
 This contract is the winner of this years underhanded solidity contest, it mimics
 the OpenSea application.
@@ -23,6 +33,7 @@ Can you spot the flaws in it
 💰 The NFT owner can call acceptBid to accept one of these on-chain bids.
 🤝 Assets exchange hands.
 😤 What could possibly go wrong?
+
 Hints
 Look at the Solmate contracts used, and the way transferFrom is implemented.
 https://github.com/transmissions11/solmate

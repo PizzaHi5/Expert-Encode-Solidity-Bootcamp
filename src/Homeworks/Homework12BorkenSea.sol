@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8;
 
-import "solmate/tokens/ERC20.sol";
-import "solmate/tokens/ERC721.sol";
-import "solmate/utils/SafeTransferLib.sol";
+import "@solmate/tokens/ERC20.sol";
+import "@solmate/tokens/ERC721.sol";
+import "@solmate/utils/SafeTransferLib.sol";
 
 contract BrokenSea {
     using SafeTransferLib for ERC20;

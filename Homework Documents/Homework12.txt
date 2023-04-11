@@ -34,6 +34,17 @@ Can you spot the flaws in it
 🤝 Assets exchange hands.
 😤 What could possibly go wrong?
 
+- Notes
+    line 21: This does not check if the sender owns the NFT.
+    line 73: safeTransferFrom was not used. Sender could be a contract. 
+             A contract accepts the bid posted. I suspect this is exploitable.
+    line 120 of ERC721: Has onERC721Received which is not used in regular transferFrom.
+                        Due to the ordering of the transfers, I suspect that its possible
+                        for whoever calls acceptBid to transfer the erc20s but not receive
+                        the NFT in return. 
+    line 47: ERC20 token checked is based off ^(XOR) of erc721 address and erc20 address. 
+             I see the note on key collision.
+
 Hints
 Look at the Solmate contracts used, and the way transferFrom is implemented.
 https://github.com/transmissions11/solmate

@@ -1,0 +1,10 @@
+{
+  "instrToOriginalMap": [],
+  "otherInstrumentation": [],
+  "propertyMap": [],
+  "originalSourceList": [
+    "./contracts/vulnerableERC20.sol"
+  ],
+  "instrSourceList": [],
+  "scribbleVersion": "0.6.22"
+}

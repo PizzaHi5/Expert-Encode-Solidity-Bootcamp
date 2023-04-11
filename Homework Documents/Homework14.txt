@@ -1,11 +1,19 @@
 Homework 14
 Solidity / Yul bitwise
 1. What are the potential dangers when performing the following bitwise operations
+1. Left shift
+2. Right shift
+-   Since there are no checks, its possible to overflow and underflow accordingly:
+    left shift overflow, right shift underflow.
+
 2. Bit Operations
 Imagine you have a uint256 variable in storage named x
 check if x starts with de or be
-if x starts with 0xde multiply x by 4
+if x starts with 0xde multiply x by 4 
+-   0xde = 222
 if x starts with 0xbe divide x by 4
+-   0xbe = 190
+
 Write the code in
 a. Solidity
 b. Yul

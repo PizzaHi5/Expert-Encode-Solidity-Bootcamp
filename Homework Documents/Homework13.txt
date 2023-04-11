@@ -4,7 +4,18 @@ Auditing and Formal Methods
 Go through the token checklist for this contract
 https://gist.github.com/shayanb/cd495e23c7cf1a8b269f8ce7fd198538
 https://gist.github.com/extropyCoder/933b1815629baa873c4d7369e1fc9c76
+-   Lot of information to glean here. I read thru many of the resource links to get
+    an understanding of all the exploits out there and see for myself the rigorous
+    auditing processes that are in place. No wonder auditing is such a huge push 
+    right now in the industry! Tons of vulnerabilities and possible attack vectors.
 
 2. Scribble
 1. Try the exercise here
 https://github.com/ConsenSys/scribble-exercise-1
+-   Installed the repo and ran the commands listed. Took a while to run on my pc.
+    Says the completed analysis was successful and no issues were detected.
+    I compared this ERC20 contract with solmates ERC20, they both behave the same
+    however this one does the same logic more inefficiently and has a require
+    statement. The version difference is the major issue. 0.6.0 is vulnerable to
+    overflow and this method has no overflow checks. 
+

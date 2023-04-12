@@ -11,7 +11,14 @@ contract Homework14Test is Test {
     Homework14 public eg;
 
     // Test values from Hw14
+    // check 0xde = 11011110    222
+    // check 0xbe = 10111110    190
+    uint256 ezValue = 0xdede; // 57054 or 1101111011011110
+
+    //starts with be
     uint256 beValue = 86177475670493197073919501659849812897660611100807883281033508768520888346190;
+
+    //starts with de
     uint256 deValue = 100651486825157721501865874785935801379319359184012953785965706769510029551182;
 
     function setUp() public {
@@ -21,24 +28,46 @@ contract Homework14Test is Test {
         eg = new Homework14();
     }
 
-    function testSolidityBitOperation() public {
-        eg.setX(beValue);
-        eg.solidityBitOperation();
-        assertEq(eg.getX(), beValue * 4);
+    function testSolidityEzValueBitOperation() public {
+        eg.setX(ezValue);
+        bytes memory temp = abi.encode(ezValue);
+        console.log(vm.toString(temp));
+        console.log(vm.toString(bytes1(temp)));
 
-        eg.setX(deValue);
+        uint8 hmm = uint8(ezValue & (8 << 31));
+        console.log(hmm);
+
+        //bytes1 value = bytes1(bytes32(temp) >> 31);
+        //console.log(vm.toString(value));
+
         eg.solidityBitOperation();
-        assertEq(eg.getX(), deValue / 4);
+        assertEq(eg.getX(), ezValue * 4);
     }
-
-    function testYulBitOperation() public {
+    
+    function testSolidityBitOperation() public {
+        /*
         eg.setX(beValue);
-        eg.yulBitOperation();
+        eg.solidityBitOperation();
         assertEq(eg.getX(), beValue * 4);
 
         eg.setX(deValue);
-        eg.yulBitOperation();
+        eg.solidityBitOperation();
         assertEq(eg.getX(), deValue / 4);
+        */
+    }
+    
+    function testYulBitOperation() public {
+        eg.setX(ezValue);
+        eg.yulBitOperation();
+        assertEq(eg.getX(), ezValue / 4);
+
+        //eg.setX(beValue);
+        //eg.yulBitOperation();
+        //assertEq(eg.getX(), beValue * 4);
+
+        //eg.setX(deValue);
+        //eg.yulBitOperation();
+        //assertEq(eg.getX(), deValue / 4);
     }
 
     

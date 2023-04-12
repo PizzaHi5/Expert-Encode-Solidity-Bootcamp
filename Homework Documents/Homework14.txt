@@ -10,9 +10,18 @@ Solidity / Yul bitwise
 Imagine you have a uint256 variable in storage named x
 check if x starts with de or be
 if x starts with 0xde multiply x by 4 
--   0xde = 222
+-   0xde = 222 = 11011110
 if x starts with 0xbe divide x by 4
--   0xbe = 190
+-   0xbe = 190 = 10111110
+
+-   Took a while to figure out that 'starts with' refers to the MSB, not LSB. Not
+    realizing this sooner, I started teaching myself how to work with bitwise operators 
+    (similar to what I had to do in cairo program exercise 6/7 (ZK-Encode-Bootcamp Repo)).
+    This is much easier now that I do not have to worry about it since we only need to
+    look at the first byte, not the last byte. I am still glad I taught myself more about
+    this because bitmaps are commonly used in Solidity. I have seen them used in Uniswap V3
+    firsthand. Many of the more complex/optimized contracts used bit operations so I am
+    glad I took the time to learn it! Woot woot! :D 
 
 Write the code in
 a. Solidity

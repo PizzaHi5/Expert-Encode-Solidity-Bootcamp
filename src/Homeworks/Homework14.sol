@@ -3,13 +3,14 @@ pragma solidity ^0.8.18;
 
 contract Homework14 {
 
-    uint x;
+    uint256 x;
+
 
     function solidityBitOperation() public {
         //bytes memory temp = abi.encodePacked(x);
 
         //left shifted to push last bytes upfront for bytes1 conversion
-        bytes1 value = bytes1(bytes32(abi.encodePacked(x)) << 31);
+        bytes1 value = bytes1((abi.encodePacked(x)));
 
         if (value == 0xde) {
             x *= 4;
@@ -19,17 +20,22 @@ contract Homework14 {
 
     }
 
+    /// @dev Not sure whats going wrong here
     function yulBitOperation() public {
         assembly {
-            let y := sload(x.slot)
-            let value := shr(31, y)
+            log0(0x00, 0x01)
+            let temp := sload(x.slot)
+            let y := add(temp, 0x20)
+            log0(y, 0x20)
+            let value := byte(2, y)
+            log0(value, 0x01)
             if eq(value, 0xde) {
                 y := mul(y, 4)
-                sstore(x.slot, y)
+                sstore(0x00, y)
             }
             if eq(value, 0xbe) {
                 y := div(y, 4)
-                sstore(x.slot, y)
+                sstore(0x00, y)
             }
         }
     }

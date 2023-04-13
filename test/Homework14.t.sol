@@ -14,12 +14,16 @@ contract Homework14Test is Test {
     // check 0xde = 11011110    222
     // check 0xbe = 10111110    190
     uint256 ezValue = 0xdede; // 57054 or 1101111011011110
+    
+    // masks slot data except checked byte
+    // need 0xff + (bytes.length of 0s - 1)
+    uint256 filter = 0xff00000000000000000000000000000000000000000000000000000000000000;
 
     //starts with be
     uint256 beValue = 86177475670493197073919501659849812897660611100807883281033508768520888346190;
 
-    //starts with de
-    uint256 deValue = 100651486825157721501865874785935801379319359184012953785965706769510029551182;
+    //starts with de, should not overflow when multiplying by 4 now
+    uint256 deValue = 3145358963286178796933308587060493793103729974500404805811428336547188423474;
 
     function setUp() public {
         string memory ETH_RPC_URL = vm.envString("ETH_RPC_URL");
@@ -30,9 +34,9 @@ contract Homework14Test is Test {
 
     function testSolidityEzValueBitOperation() public {
         eg.setX(ezValue);
-        bytes memory temp = abi.encode(ezValue);
+        bytes memory temp = abi.encodePacked(ezValue);
         console.log(vm.toString(temp));
-        console.log(vm.toString(bytes1(temp)));
+        console.log(vm.toString(bytes1(bytes32(temp) << 30)));
 
         uint8 hmm = uint8(ezValue & (8 << 31));
         console.log(hmm);
@@ -43,9 +47,8 @@ contract Homework14Test is Test {
         eg.solidityBitOperation();
         assertEq(eg.getX(), ezValue * 4);
     }
-    
+    /*
     function testSolidityBitOperation() public {
-        /*
         eg.setX(beValue);
         eg.solidityBitOperation();
         assertEq(eg.getX(), beValue * 4);
@@ -53,7 +56,6 @@ contract Homework14Test is Test {
         eg.setX(deValue);
         eg.solidityBitOperation();
         assertEq(eg.getX(), deValue / 4);
-        */
     }
     
     function testYulBitOperation() public {
@@ -69,6 +71,6 @@ contract Homework14Test is Test {
         //eg.yulBitOperation();
         //assertEq(eg.getX(), deValue / 4);
     }
-
+    */
     
 }

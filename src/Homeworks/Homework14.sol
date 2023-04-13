@@ -7,10 +7,14 @@ contract Homework14 {
 
 
     function solidityBitOperation() public {
-        //bytes memory temp = abi.encodePacked(x);
-
+        //bytes memory temp = abi.encodePacked(x)
         //left shifted to push last bytes upfront for bytes1 conversion
         bytes1 value = bytes1((abi.encodePacked(x)));
+
+        assembly {
+            let p := sload(0x00)
+               
+        }
 
         if (value == 0xde) {
             x *= 4;

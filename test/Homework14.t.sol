@@ -69,17 +69,13 @@ contract Homework14Test is Test {
     }
     
     function testYulBitOperation() public {
-        eg.setX(ezValue);
+        eg.setX(beValue);
         eg.yulBitOperation();
-        assertEq(eg.getX(), ezValue / 4);
+        assertEq(eg.getX(), beValue / 4);
 
-        //eg.setX(beValue);
-        //eg.yulBitOperation();
-        //assertEq(eg.getX(), beValue * 4);
-
-        //eg.setX(deValue);
-        //eg.yulBitOperation();
-        //assertEq(eg.getX(), deValue / 4);
+        eg.setX(deValue);
+        eg.yulBitOperation();
+        assertEq(eg.getX(), deValue);
     }
     
     function removeLeadingZeros(bytes32 data) public pure returns (string memory) {

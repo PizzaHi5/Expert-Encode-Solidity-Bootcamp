@@ -29,5 +29,10 @@ b. Yul
 Which one is most gas efficient ?
 To help you test your solution, here are some decimal values you can use
 https://gist.github.com/extropyCoder/e991809dbb4194dc5af00d6422083f99
-1. Left shift
-2. Right shift
+-   Wrote both functions in Homework14.sol in src/Homeworks/. I can quickly tell that with
+    a better setup, the Yul implementation would be far cheaper to write too. Both methods
+    make a local memory slot. A more optimized implementation would not need this in Yul. I
+    also do a second rewrite in Yul. With all these extra steps, its still only 1000 gas more
+    to perform this function. 
+
+-   Good job self! You got this working! Wooooo! :D

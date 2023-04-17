@@ -25,15 +25,14 @@ contract Homework14 {
 
     }
 
-    /// @dev Not sure whats going wrong here
     function yulBitOperation() public {
         assembly {
-            log0(0x00, 0x01)
-            let temp := sload(x.slot)
-            let y := add(temp, 0x20)
-            log0(y, 0x20)
-            let value := byte(2, y)
-            log0(value, 0x01)
+            let ptr := x.slot
+            mstore(0x00, sload(ptr))
+            let y := mload(0x00)
+            log0(0x00, 0x20)
+            //load 8 bits at y ptr
+            let value := byte(0, y)
             if eq(value, 0xde) {
                 y := mul(y, 4)
                 sstore(0x00, y)

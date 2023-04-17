@@ -5,15 +5,21 @@ contract Homework14 {
 
     uint256 x;
 
-
     function solidityBitOperation() public {
         //bytes memory temp = abi.encodePacked(x)
-        //left shifted to push last bytes upfront for bytes1 conversion
-        uint256 value = x & 0xff;
-
-        if (value == 0xde) {
+        // checks LSB
+        uint256 lsbValue = x & 0xff;
+        if (lsbValue == 0xde) {
             x *= 4;
-        } else if (value == 0xbe) {
+        } else if (lsbValue == 0xbe) {
+           x /= 4;
+        }
+
+        bytes1 msbValue = bytes1(bytes32(abi.encodePacked(x)));
+
+        if (msbValue == 0xde) {
+            x *= 4;
+        } else if (msbValue == 0xbe) {
             x /= 4;
         }
 

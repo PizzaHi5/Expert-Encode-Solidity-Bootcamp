@@ -50,16 +50,22 @@ contract Homework14Test is Test {
 
         eg.solidityBitOperation();
         assertEq(eg.getX(), ezValue * 4);
+
+        console.log(vm.toString(bytes32(abi.encodePacked(beValue))));
+        bytes1 yup = bytes1(bytes32(abi.encodePacked(beValue)));
+        console.log(vm.toString(yup));
+        uint256 test = beValue & 0xff;
+        console.log(vm.toString(abi.encodePacked(test)));
     }
     
     function testSolidityBitOperation() public {
-        //eg.setX(beValue);
-        //eg.solidityBitOperation();
-        //assertEq(eg.getX(), beValue * 4);
+        eg.setX(beValue);
+        eg.solidityBitOperation();
+        assertEq(eg.getX(), beValue / 4);
 
         eg.setX(deValue);
         eg.solidityBitOperation();
-        assertEq(eg.getX(), deValue / 4);
+        assertEq(eg.getX(), deValue);
     }
     
     function testYulBitOperation() public {
@@ -93,10 +99,6 @@ contract Homework14Test is Test {
     return string(finalResult);
     }
 
-    function getMSB(uint256 value) internal pure returns (bytes1) {
-        
-    }
-
     function binaryToHex(string memory binary) public pure returns (string memory) {
     bytes memory binaryBytes = bytes(binary);
     require(binaryBytes.length % 4 == 0, "Invalid binary string");
@@ -113,6 +115,13 @@ contract Homework14Test is Test {
     }
     
     return string(abi.encodePacked(hexBytes));
+    }
+
+    function getMsb(uint256 value) internal pure returns (bytes memory msb) {
+        msb = new bytes(1);
+        assembly {
+            mstore(add(msb, 1), value)
+        }
     }
 
 }
